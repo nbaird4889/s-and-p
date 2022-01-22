@@ -13,14 +13,14 @@ const Dashboard = (props) => {
     return (
         <div className="dashboard">
             {stocks.map((stock, index) => {
-                const { name, symbol } = stock;
+                const { name, symbol } = stock
 
             return (
                 <Link key={index} to={`/stocks/${symbol}`}>
-                    <h2>{name}: {symbol}</h2>
+                    <h2>{symbol}: {name}</h2>
                 </Link>
-            );
-        })};
+            )
+        })}
         </div>
     );
 };
