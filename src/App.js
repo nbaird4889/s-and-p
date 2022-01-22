@@ -24,7 +24,6 @@ function App() {
       render={(routerProps) => <Stocks {...routerProps} />}
       />
       </Switch>
-      <Intro />
       <Footer />
     </div>
   );

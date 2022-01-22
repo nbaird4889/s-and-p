@@ -47,13 +47,86 @@ h1 {
 }
 
 .intro {
-  background-image: url("https://res.cloudinary.com/dhbumhhh1/image/upload/v1642889597/Untitled-1_wycett.png");
+  background-image: url("https://res.cloudinary.com/dhbumhhh1/image/upload/b_rgb:0b0b0b,o_43/v1642889597/Untitled-1_wycett.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   padding-right: 100px;
   padding-left: 100px;
   padding-top: 80px;
-  padding-bottom: 600px;
+  padding-bottom: 300px;
+}
+
+.intro-header {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  padding: 50px;
+}
+
+.para-intro {
+  color: white;
+  text-align: center;
+  font-size: 26px; 
+  margin-bottom: 40px;
+  padding: 0 100px;
+}
+
+.button {
+  border: none;
+  border-radius: 5px;
+  background-color:greenyellow; 
+  padding: 10px 30px; 
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.button:hover {
+  background-color: orange;
+}
+
+.button-div {
+  text-align: center;
+}
+
+.card-cont {
+  display: flex;
+}
+
+.dashboard {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 40px;
+  row-gap: 50px;
+  padding: 60px;
+  background-image: url("https://res.cloudinary.com/dhbumhhh1/image/upload/b_rgb:0b0b0b,o_43/v1642889597/Untitled-1_wycett.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.cards {
+  padding: 50px;
+  background-color: yellowgreen;
+  color: white;
+}
+
+.cards a {
+  color: white;
+  cursor: pointer;
+}
+
+#stock-div {
+  text-align: center;
+}
+
+.stock-info {
+  color: white;
+  padding: 10px 100px;
+}
+
+.website {
+  color: white; 
 }
 

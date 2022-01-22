@@ -2535,9 +2535,11 @@ const Dashboard = (props) => {
             {stocks.map((stock, index) => {
                 const { Name, Symbol } = stock
             return (
+                <div className="cards">
                 <Link key={index} to={`/stocks/${Symbol}`}>
                     <h2>{Symbol}: {Name}</h2>
                 </Link>
+                </div>
             )
         })}
         </div>

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 function Intro() {
     return (
         <div className="intro">
@@ -18,7 +20,11 @@ function Intro() {
                 The index is associated with many ticker symbols, including ^GSPC, INX, and $SPX, depending on market or website.
                 The S&P 500 is maintained by S&P Dow Jones Indices, a joint venture majority-owned by S&P Global, and its components are selected by a committee
             </p>  
-           
+            <div className="button-div">
+            <Link to="/dashboard">
+                <button className="button">Stock Dashboard</button>
+            </Link>
+            </div>
         </div>
     )
 }
