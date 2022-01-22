@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 
 const Stocks = (props) => {
     const apiKey = "6aa97979d9feece39402f0b9bcf939b5";
-    const symbol = props.match.params.symbol;
-    const url = `https://financialmodelingprep.com/api/v3/profile/${symbol}?apikey=${apiKey}`;
+    const Symbol = props.match.params.Symbol;
+    const url = `https://financialmodelingprep.com/api/v3/profile/${Symbol}?apikey=${apiKey}`;
 
     const [ stock, setStock ] = useState(null);
 
