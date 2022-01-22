@@ -1,5 +1,9 @@
 const Main = (props) => {
-    return <h1>This is the Main Component</h1>;
+    return (
+        <div className="main">
+
+        </div>
+    ) 
   };
   
   export default Main;

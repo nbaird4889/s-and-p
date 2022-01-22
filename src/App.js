@@ -5,6 +5,8 @@ import Main from "./pages/Main"
 import Dashboard from "./pages/Dashboard"
 import Stocks from "./pages/Stocks"
 import Nav from "./components/Nav"
+import Footer from "./components/Footer"
+import Intro from "./components/Intro"
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
       render={(routerProps) => <Stocks {...routerProps} />}
       />
       </Switch>
+      <Intro />
+      <Footer />
     </div>
   );
 }
