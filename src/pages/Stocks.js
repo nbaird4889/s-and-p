@@ -20,12 +20,12 @@ const Stocks = (props) => {
 
     const loaded = () => {
         return (
-          <div className="intro" id="stock-div">
+          <div className="stock" id="stock-div">
             <h2 className="stock-info">{stock[0].symbol}: {stock[0].companyName}</h2>
             <h2 className="stock-info">Price: ${stock[0].price}</h2>
             <h2 className="stock-info">Exchange: {stock[0].exchangeShortName}</h2>
             <h2 className="stock-info">Industry: {stock[0].industry}</h2>
-            <p className="stock-info">{stock[0].description}</p>
+            <p id="extra-info" className="stock-info">{stock[0].description}</p>
             <a className="website" href={stock[0].website} target="_blank"><button className="button">Website</button></a>
           </div>
         );

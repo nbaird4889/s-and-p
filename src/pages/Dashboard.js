@@ -1,6 +1,12 @@
 import { Link } from "react-router-dom"
+import { useState } from "react"
 
 const Dashboard = (props) => {
+  const [search, setSearch] = useState("");
+
+  function handleChange(e) {
+    setSearch(e.target.value);
+  }
     const stocks = 
     [
         {
@@ -2531,18 +2537,41 @@ const Dashboard = (props) => {
     ]; 
 
     return (
+      <div className="dash">
+        <div className="dash-intro">
+          <h2 className="dash-headline">S&P 500 Stocks</h2>
+          <p className="dash-text">Click on any of the below stocks to see more details.</p>
+            <form className="form">
+                      <label>Search for a stock: </label> <br></br>
+                      <input
+                          placeholder="Just start typing a company name..."
+                          name="search"
+                          onChange={handleChange}
+                          id="search-label"
+                      />
+            </form>
+        </div>
         <div className="dashboard">
-            {stocks.map((stock, index) => {
+            {stocks.filter((value) => {
+              if (search ==="") {
+                return value;
+              } else if (
+                value.Name.toLowerCase().includes(search.toLocaleLowerCase())
+              ) {
+                return value;
+              }
+            }).map((stock, index) => {
                 const { Name, Symbol } = stock
             return (
                 <div className="cards">
                 <Link key={index} to={`/stocks/${Symbol}`}>
-                    <h2>{Symbol}: {Name}</h2>
+                    <h2 className="card-info">{Name}: {Symbol}</h2>
                 </Link>
                 </div>
             )
         })}
         </div>
+      </div>
     );
 };
 
